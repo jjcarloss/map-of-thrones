@@ -1,0 +1,4 @@
+[03-Nov-2012 23:08:10] PHP Fatal error:  Call to undefined function  get_template_parts() in /home2/mikinapo/public_html/atelier/wp-content/themes/atelier/index.php on line 18
+[08-Nov-2012 10:36:39] PHP Fatal error:  Call to undefined function  get_template_parts() in /home2/mikinapo/public_html/atelier/wp-content/themes/atelier/index.php on line 18
+[08-Nov-2012 10:51:16] PHP Fatal error:  Call to undefined function  get_template_parts() in /home2/mikinapo/public_html/atelier/wp-content/themes/atelier/index.php on line 18
+[15-Nov-2012 23:16:26] PHP Fatal error:  Call to undefined function  get_template_parts() in /home2/mikinapo/public_html/atelier/wp-content/themes/atelier/index.php on line 59

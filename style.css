@@ -1,0 +1,392 @@
+/*
+Theme Name: 	Atelier Architects Front end
+Theme URI: 		http://viewportindustries.com/products/starkers
+Description: 	Front end a medida para Atelier Architects. 
+Version: 		1.0
+Author: 		Raver Studio
+Author URI: 	http://raverstudio.com
+Tags: 			atelier, architects, raverstudio
+*/
+
+/*
+===========================
+CONTENTS:
+
+01 Sensible defaults
+02 Typography
+03 Media queries 
+===========================
+*/
+
+/* ---------------------------------------------------------------------------------------------------------- 
+01 Sensible defaults ----------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+
+div,
+article,
+section,
+header,
+nav,
+li					{ position:relative; /* For absolutely positioning elements within containers (add more to the list if need be) */ }
+.group:after 		{ display:block; height:0; clear:both; content:"."; visibility:hidden; /* For clearing */ }
+body 				{  /* Don't forget to style your body to avoid user overrides */ }
+::-moz-selection 	{ background:#ff0; color:#333; }
+::selection 		{ background:#ff0; color:#333; }
+
+/* ---------------------------------------------------------------------------------------------------------- 
+02 Typography -----------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+/*
+
+14 / 16	= 		0.875em 		(14px equivalent)
+16 / 16	= 		1em 			(16px equivalent)
+18 / 16 = 		1.125em 		(18px equivalent)
+21 / 16 = 		1.3125em 		(21px equivalent)
+24 / 16 = 		1.5em 			(24px equivalent)
+30 / 16 = 		1.875em 		(30px equivalent)
+
+*/
+
+body,
+input,
+textarea 			{ /* We strongly recommend you declare font-weight using numerical values, but check to see which weights you're exporting first */ }
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 					{ font-weight:bold; /* This helps to identify headings at the initial build stage, but you should write something more precise later on */ }
+
+/* ---------------------------------------------------------------------------------------------------------- 
+03 Media queries (using a mobile-first approach) ------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+
+/* 400 and up */
+@media screen and (min-width:400px) {
+
+					{ /* Place your styles here for all widths greater than 400px */ }
+
+}
+
+/* Retina Display */
+@media screen and (-webkit-min-device-pixel-ratio:2) {
+
+					{ /* Place your styles here for all 'Retina' screens */ }
+
+}
+
+
+/***************************************************** CSS RESET */
+
+aside, article, section, header, footer, nav {
+	display: block;
+	}
+
+div, h1, h2, h3, p, ul, li, img {
+	margin: 0;
+	padding: 0;
+	/*font-weight: normal;*/
+	}
+	
+img{
+	border: none; 
+	}
+
+/***************************************************** GENERAL*/
+
+html {
+	margin: 0;
+	padding: 0;
+	min-width: 1000px;
+	height: 100%;
+	}
+
+.home{
+	}
+
+body {
+	margin: 0;
+	background: #323232;
+	}
+
+.container{
+	padding: 0;
+	font-family: "freight-sans-pro", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #917879;
+	margin: 0 auto;
+	}
+
+p {
+	margin-bottom: 5px;
+	}
+
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+	}
+
+.clearfix:after {
+	clear: both;
+	[if IE] zoom:1;
+	}
+
+.content {
+	width: 850px;
+	padding: 0 0 0 50px;
+	margin: 0 auto;
+	position: relative;
+	}
+
+.ravercredits{
+	position: fixed;
+	bottom: 7px;
+	right: 10px;
+	width: 190px;
+	height: 35px;
+	cursor: pointer;
+	}
+
+.credits-on{
+	position: absolute;
+	top:0;
+	left:0;
+	} 
+	
+.credits-off{
+	position: absolute;
+	top:0;
+	left:0;
+	}
+
+.title_section{
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: darkGrey;
+	margin-bottom: 10px;	
+	}
+
+h1 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	color:#FF9900;
+	margin-bottom: 10px;
+	}
+
+h2 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color:#FF9900;
+	margin-bottom: 10px;
+	}
+
+h3 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	color: #FF9900;
+	margin-bottom: 5px;
+	}
+
+h4 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #FF9900;
+	margin-bottom: 5px;
+	}
+
+a {
+	text-decoration: none;
+	color: #917879;
+	}
+
+a:hover {
+	color: white;
+	}
+
+/***************************************************** HEADER Y NAV BAR */
+
+
+
+nav ul {
+		list-style: none;
+		padding: 15px 0 0 0;
+		width: 45px;
+		margin: 0 auto;
+	}
+
+		nav li, nav li a {
+			display: block;
+			height: 51px;
+			width: 45px;
+		}
+		
+			nav li { 
+				text-indent: -9999px; 
+				background: url(images/icons.png) no-repeat 0 0;
+				border: 0;
+			}
+
+
+nav {
+	width: 77px;
+	height: 351px;
+	background: url(images/nav.png) no-repeat 0 0;
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 5px;
+	z-index: 1000;
+}
+/*
+nav ul {
+list-style: none;
+padding: 15px 0 0 0;
+width: 45px;
+margin: 0 auto;
+}
+
+nav li, nav li a {
+display: block;
+height: 51px;
+width: 45px;
+}
+*/
+.selectionTable{
+	background-color: rgba(72, 66, 54, .6);
+	top: 0px;
+	left: 72px;
+	width: 450px;
+	height: 150%;
+	overflow-y: scroll;
+	position: absolute;
+}
+
+/***************************************************** WEBKIT SCROLLBAR */
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(201,183,80,0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5), 0px 2px 3px 0px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(201,183,80,0.4); 
+}
+/***********************************************FIN DE WEBKIT SCROLLBAR */
+
+.locationHolder{
+	padding: 5px;
+	border-bottom: 1px solid whiteSmoke;
+}
+.locationHolder:hover{
+	background-color: rgba(77, 21, 10, 0.6);
+}
+.icon{
+	width:40px;
+	height:40px;
+	display:inline-block;
+	background-color:#4d150a;
+	color:yellow;
+	text-align: center;
+	font-size: 36px;
+}
+
+.locationTitleOuter{
+	position:relative;
+}
+.locationTitle{
+	position: absolute;
+	left: 49px;
+	margin-top: -36.5px;
+	color: #fff;
+	display: block;
+	font-size: 20px;
+	font-weight: 300;
+}
+
+/**************************************************************** ICONS */
+.icon-ri {
+	background-image: url("images/iconRI.jpg");
+	text-indent: -9999px;
+}
+.icon-bo {
+	background-image: url("images/iconBO.jpg");
+	text-indent: -9999px;
+}
+.icon-ca {
+	background-image: url("images/iconCA.jpg");
+	text-indent: -9999px;
+}
+.icon-ci {
+	background-image: url("images/iconCI.jpg");
+	text-indent: -9999px;
+}
+.icon-co {
+	background-image: url("images/iconCO.jpg");
+	text-indent: -9999px;
+}
+.icon-fo {
+	background-image: url("images/iconFO.jpg");
+	text-indent: -9999px;
+}
+.icon-is {
+	background-image: url("images/iconIS.jpg");
+	text-indent: -9999px;
+}
+.icon-mo {
+	background-image: url("images/iconMO.jpg");
+	text-indent: -9999px;
+}
+.icon-oc {
+	background-image: url("images/iconOC.jpg");
+	text-indent: -9999px;
+}
+.icon-rc {
+	background-image: url("images/iconRC.jpg");
+	text-indent: -9999px;
+}
+.icon-ro {
+	background-image: url("images/iconRO.jpg");
+	text-indent: -9999px;
+}
+.icon-rt {
+	background-image: url("images/iconRT.jpg");
+	text-indent: -9999px;
+}
+.icon-to {
+	background-image: url("images/iconTO.jpg");
+	text-indent: -9999px;
+}
+.icon-zo {
+	background-image: url("images/iconZO.jpg");
+	text-indent: -9999px;
+}
+/**********************************************************FIN DE ICONS */
+
+nav li#work{ background-position: 0 0; }
+nav li#work:hover { background-position: -45px 0;}
+
+nav li#about{ background-position: 0 -51px; }
+nav li#about:hover { background-position: -45px -51px;}
+
+nav li#contact { background-position: 0 -102px; margin-top: 50px;}
+nav li#contact:hover { background-position: -45px -102px;}
+
+nav li#twitter { background-position: 0 -153px; }
+nav li#twitter:hover { background-position: -45px -153px;}
+
+nav li#dribbble { background-position: 0 -204px; }
+nav li#dribbble:hover { background-position: -45px -204px;}
+
+nav li#forrst { background-position: 0 -255px; }
+nav li#forrst:hover { background-position: -45px -255px;}

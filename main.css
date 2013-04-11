@@ -1,0 +1,182 @@
+/***CSS RESET***/
+aside, article, section, header, footer, nav {
+	display: block;
+}
+div, h1, h2, h3, p, ul, li, img {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+
+/***GENERAL***/
+html {
+	margin: 0;
+	padding: 0;
+	background: #323232;
+}
+body {
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #917879;
+	width: 1000px;
+	margin: 0 auto;
+}
+p {
+	margin-bottom: 5px;
+}
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+	[if IE] zoom:1;
+}
+.content {
+	width: 850px;
+	padding: 75px 0 0 50px;
+	margin: 0 auto;
+	position: relative;
+}
+footer {
+	width: 850px;
+	padding: 75px 0 0 50px;
+	margin: 0 auto;
+	text-align: center;
+}
+h1 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	color: darkGrey;
+	margin-bottom: 18px;
+}
+h3 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: white;
+	margin-bottom: 5px;
+}
+a {
+	text-decoration: none;
+	color: #917879;
+}
+a:hover {
+	color: white;
+}
+
+/***HEADER Y NAV BAR***/
+header {
+	padding-top: 20px;
+}
+#logo {
+	float: left;
+}
+nav {
+	float: right;
+	padding-top: 15px;
+}
+nav li {
+	list-style: none;
+}
+.client {
+	margin-bottom: 6px;
+}
+
+/***LOGIN***/
+#login {
+	float: right;
+	width: 185px;
+	height: 42px;
+	margin: 15px;
+}
+#login div {
+	width: 40px;
+	height: 16px;
+	background-color: #666;
+	color: #a9a9a9;
+	text-align: center;
+	padding: 2px 0;
+}
+#login div:first-child {
+	margin-bottom: 2px;
+}
+#login form {
+	float: right;
+}
+#login input {
+	width: 138px;
+	border: none;
+	background-color: #a9a9a9;
+	height: 20px;
+	padding: 0;
+	color: ##323232;
+	padding: 0 2px;
+}
+#login input:first-child {
+	margin-bottom: 2px;
+}
+#login section {
+	float: left;
+}
+
+/***HOME***/
+.catIndex {
+	width: 280px;
+	float: left;
+	margin-left: 5px;
+}
+.catIndex:first-child {
+	margin-left: 0;
+}
+.proCar {
+	position:absolute;
+	z-index:100;
+	width: 266px;
+	height: 71px;
+	background-image: url(../images/procaribe.gif);
+	background-repeat: no-repeat;
+}
+.proCar:hover {
+	background-image: url(../images/procaribe_hover.gif);
+	background-repeat: no-repeat;
+}
+.proCarTxt {
+	padding: 10px 45px 10px 10px;
+	width: 245px;
+	height: 51px;
+	position: absolute;
+	left: 316px;
+	top: 75px;
+	background-color: #101010;
+	color: #a1a1a1;
+	z-index:10;
+}
+
+/***CONTACT***/
+.contact {
+	width: 745px;
+	margin: 0 auto;
+}
+.contact div {
+	width: 200px;
+	float: left;
+	margin-left: 20px;
+}
+.contact div:first-child {
+	width: 85px;
+	margin-left: 0px;
+}
+.avatar {
+	margin-bottom: 15px;
+}
+.moreInfo {
+	padding: 10px 0;
+}
+.postArea{
+	background-color: #555;
+
+}
